@@ -2,5 +2,26 @@
 	"FileVersion": 3,
 	"EngineAssociation": "5.2",
 	"Category": "",
-	"Description": ""
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "PlaystageDemo5",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "MultiplayerLevelEditor",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/9d2ba67bc3eb4510aa1a0d2cfdf98b30"
+		},
+		{
+			"Name": "RLPlugin",
+			"Enabled": true
+		}
+	]
 }
