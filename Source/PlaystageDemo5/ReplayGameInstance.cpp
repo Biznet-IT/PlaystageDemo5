@@ -1,6 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "ReplayGameInstance.h"
 #include "PlaystageDemo5.h"
 #include "Runtime/NetworkReplayStreaming/NullNetworkReplayStreaming/Public/NullNetworkReplayStreaming.h"
@@ -95,7 +94,7 @@ void UReplayGameInstance::DeleteReplay(const FString& ReplayName)
 
 void UReplayGameInstance::Init()
 {
-	Super::Init();
+    Super::Init();
 
 	// create a ReplayStreamer for FindReplasys() and DeleteReplay(..)
 	EnumerateStreamsPtr = FNetworkReplayStreaming::Get().GetFactory().CreateReplayStreamer();

@@ -13,9 +13,22 @@ UCLASS()
 class PLAYSTAGEDEMO5_API AReplayPlayerControllerB : public APlayerController
 {
 	GENERATED_BODY()
-	
-};
 
+public:
+    //function to start recording a replay
+    UFUNCTION(BlueprintCallable, Category = "Replays")
+    void StartRecording();
+
+    //function to stop recording a replay
+    UFUNCTION(BlueprintCallable, Category = "Replays")
+    void StopRecording();
+
+    //function to play a replay
+    UFUNCTION(BlueprintCallable, Category = "Replays")
+    void PlayReplay();
+
+};
+/*
 //Function to start recording a replay
 void AReplayPlayerControllerB::StartRecording()
 {
@@ -45,3 +58,4 @@ void AReplayPlayerControllerB::PlayReplay()
         PlayerControllerB->ConsoleCommand("DemoPlay MyReplay", true);
     }
 }
+*/
