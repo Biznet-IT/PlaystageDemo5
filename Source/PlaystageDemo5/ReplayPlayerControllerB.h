@@ -25,37 +25,8 @@ public:
 
     //function to play a replay
     UFUNCTION(BlueprintCallable, Category = "Replays")
-    void PlayReplay();
+    void PlayReplay(const FString& ReplayName);
 
+private:
+    FString GetTimestamp() const;
 };
-/*
-//Function to start recording a replay
-void AReplayPlayerControllerB::StartRecording()
-{
-    AReplayPlayerControllerB* PlayerControllerB = GetWorld()->GetFirstPlayerController();
-    if (PlayerControllerB)
-    {
-        PlayerControllerB->ConsoleCommand("DemoRec MyReplay", true);
-    }
-}
-
-//Fuction to stop recording a replay
-void AReplayPlayerControllerB::StopRecording()
-{
-    AReplayPlayerControllerB* PlayerControllerB = GetWorld()->GetFirstPlayerController();
-    if (PlayerControllerB)
-    {
-        PlayerControllerB->ConsoleCommand("DemoStop", true);
-    }
-}
-
-//Function to play a replay
-void AReplayPlayerControllerB::PlayReplay()
-{
-    AReplayPlayerControllerB* PlayerControllerB = GetWorld()->GetFirstPlayerController();
-    if (PlayerControllerB)
-    {
-        PlayerControllerB->ConsoleCommand("DemoPlay MyReplay", true);
-    }
-}
-*/
